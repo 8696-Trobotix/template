@@ -1,0 +1,6 @@
+[submodule "TeamCode/src/main/java/org/firstinspires/ftc/teamcode/mollusc"]
+	path = TeamCode/src/main/java/org/firstinspires/ftc/teamcode/mollusc
+	url = https://github.com/8696-Trobotix/mollusc.git
+[submodule "TeamCode/src/main/java/org/firstinspires/ftc/teamcode/HAT"]
+	path = TeamCode/src/main/java/org/firstinspires/ftc/teamcode/HAT
+	url = https://github.com/8696-Trobotix/HAT.git

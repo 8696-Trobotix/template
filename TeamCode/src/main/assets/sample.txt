@@ -1,0 +1,44 @@
+// Timeout seconds: seconds before a move times out and proceeds to the next instruction.
+// Static timeout milliseconds: milliseconds during which, if the algorithms determines that the robot
+//                              is in the right pose based on tolerances, it will end the move.
+set_timeout_seconds 5.0
+set_static_timeout_milliseconds 50
+// At least that's how it's intended to work.
+
+// Drive command: x / forward axis, y / horizontal axis, heading in degrees
+// Example: drive 1000 0 180 --> x = 100, y = 0, z = 180 deg.
+
+// The drive command moves to absolute coordinates if `MecanumAutoII` is being used.
+// Extra spaces will be ignored.
+
+// Move forward.
+drive 1000 0 0
+wait_seconds 0.5
+
+// Move backward.
+drive 0 0 0
+wait_seconds 0.5
+
+// Strafe left.
+drive 0 -1000 0
+wait_seconds 0.5
+
+// Strafe right.
+drive 0 0 0
+wait_seconds 0.5
+
+// Back at original position.
+
+// Turning is measured in degrees.
+// Experimentally determine whether your set up makes the clockwise direction positive or negative.
+// Turning counterclockwise is typically positive and turning clockwise is typically negative.
+drive 0 0 -90
+drive 0 0 0
+drive 0 0 180
+drive 0 0 0
+// Your robot will take the shortest arc to the target orientation.
+
+// Driving while turning also works.
+drive 1000 1000 90
+
+// Custom commands and conditional logic can also be configured in the interpreter.

@@ -3,6 +3,9 @@
 Please see [this readme](./README-TEMPLATE.md).  
 To update the robot controller or fix an issue in this repository, please find someone experienced with git and/or Android development.
 
+> This template is mainly intended for Trobotix members.
+> Also note that this template has not been tested.
+
 ## NOTICE
 
 This repository contains the public FTC SDK for the CENTERSTAGE (2023-2024) competition season.

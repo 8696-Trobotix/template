@@ -1,0 +1,24 @@
+// This is a configuration file.
+// You can specify a constant using the following notation:
+// <name>: <value>
+// Lines starting with "//" will be ignored.
+
+// Example configuration (remove to set your own configuration):
+
+field centric on: true
+
+autonomous drive power: 0.5
+
+drive power max: 0.87
+strafe power max: 0.97
+turn power max: 0.87
+drive power max reduced: 0.6
+strafe power max reduced: 0.7
+turn power max reduced: 0.6
+
+frontLeft direction:  reverse
+frontRight direction: forward
+rearLeft direction:   reverse
+rearRight direction:  forward
+
+TPR: 8192
